@@ -1,6 +1,6 @@
 [build]
   command = "npm install && npm run build"
   publish = "build"
-  environment = {
-    NODE_OPTIONS = "--openssl-legacy-provider"
-  }
+
+[build.environment]
+  NODE_OPTIONS = "--openssl-legacy-provider"
