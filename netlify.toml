@@ -5,3 +5,7 @@
 [build.environment]
   NODE_OPTIONS = "--openssl-legacy-provider"
   NPM_FLAGS = "--legacy-peer-deps"
+  NODE_VERSION = "18.20.4" # Ensure this matches the Node.js version you are using locally
+
+[build]
+  package_manager = "npm" # This ensures Netlify uses npm instead of pnpm
